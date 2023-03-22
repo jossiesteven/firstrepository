@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+
+    const fechaNacimiento="14 de marzo de 1991"
+    let fechaActual=null;
+    let datos;
+
+    datos=1;
+    datos="Esta soleado el día"
+    datos=true;
+    datos=false;
+    datos=["a", "b", "c"]
+    datos=[1, 2, 1]
+    datos=[1, true, "Hola!!"]
+    datos=[]
+    datos={}
+    datos{
+        id:123,
+        fecha:"10 de marzo",
+        sol:false,
+        miArreglo:[1,2,3,4,5]
+        miobjetoHijo:{
+            idHijo:12,
+            luna:true,
+        }
+    }
+
+    let contenidoObjeto=datos.id
+    contenidoObjeto=datos.miArreglo
+    contenidoObjeto=datos.miobjetoHijo.luna
+    fechaActual=Date()
+
+    console.log("Contenido variable contenidoJbjeto = ",contenidoObjeto)
+
+    console.log(fechaNacimiento)
+    console.log("hola mundo")
+
+    console.log(fechaActual)
+    // alert(fechaNacimiento)
+
+    console.log("contenido variable de datos = ", datos)
+
+    console.log("tipo de dato de la variable datos = ", typeof datos)
+
+    let diasSemana=[]
+    diasSemana.push("Lunes")
+    diasSemana.push("Martes")
+    diasSemana.push("Miercóles")
+    diasSemana.push("Jueves")
+    diasSemana.push("Viernes")
+
+    // diasSemana=["lunes","Martes" Es similar anterior paso
+
+    
+    console.log("Contenido variable dias semana = ", diasSemana)
+
+    console.log("Cuantos valores existen en la variable diasSemana = ", diasSemana.length)
+
+    Object(datos).values(datos)
+    
+    datos.map((elemento) =>console.log(elemento))
+
+    datos="1234.15"
+    datos=datos+1
+    datos=Number(datos)
+    datos=datos+1
+    datos=datos.toString()
+    datos="Mi numero es: " + datos
+
+    //datos=Date()
+
+    //datos=Date.now()
+
+</script>
+    
+</body>
+</html>

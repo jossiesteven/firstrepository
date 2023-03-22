@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+</head>
+<body>
+
+
+
+    
+</body>
+
+<script>
+
+console.log("Test")
+
+console.log("Ejecución ciclo FOR")
+
+let conteo=0;
+
+for(i=0;i<10;i++){
+
+console.log("El valor de la variable i = ", i)
+conteo++;
+}
+
+console.log("Numero de ciclos del bucle => ", conteo)
+
+console.log("Ejecución ciclo WHILE")
+let a=0;
+while(a<3){
+//alert("El valor de la variable a = ", a )
+console.log("El valor de la variable i = ", a)
+a++;    
+}
+
+console.log("Ejecución ciclo DO WHILE")
+a=4;
+do{
+console.log("El valor de la variable a = ", a);
+a++
+}
+while (a<3){}
+
+
+function ejecutarOperacion(){
+
+console.log("Ejecute Operación")
+}
+
+ejecutarOperacion();
+
+//const ejecutarOperacionOtraForma=()=>{}
+const ejecutarOperacionOtraForma=()=>console.log("Ejecutar Otra Forma de Operacion")
+ejecutarOperacionOtraForma();
+
+a=0;
+if(a<10){
+console.log("Ingrese a la condición")
+}
+
+(a<10 && console.log("Ingrese a la condición Otra forma"))
+
+a=5;
+if(a<10){
+ console.log("Ingrese a la condición If")}
+else{
+console.log("Ingrese a la condición Else")
+}   
+
+if(a<10){
+    console.log("Ingrese a la condición If A")
+    }
+else if(a<9){
+    console.log("Ingrese a la condición If B")
+}
+
+if(a<10){
+    console.log("Ingrese a la condición If C")
+}
+if (a<12){
+    console.log("Ingrese a la condición If D")
+}
+
+console.log("Ejemplo FOR")
+let datosPersonales=["Steven Rodríguez","1020","jst@gmail.com"]
+//console.log(datosPersonales) 
+
+console.log("Contenido array datosPersonales =>",datosPersonales,typeof datosPersonales)
+
+let DB={} //Objeto de datos por eso las llaves
+
+let nombresCampos=["Nombre", "Número identificación","Correo"]
+console.log(datosPersonales.length)
+
+for(index=0;index<datosPersonales.length;index++){
+//console.log(datosPersonales[index]) 
+let nombreClave = nombresCampos[index]
+
+//DB[index]=datosPersonales[index] 
+DB[nombreClave]=datosPersonales[index] 
+
+}
+//console.log(DB)
+console.log("Contenido objeto DB=>", DB)
+
+let contenidoCarta = "Yo, "+DB["Nombre"]+", Identificado con número de cedula: "+DB["Número identificación"];
+
+console.log(contenidoCarta)
+
+console.log("SERIE FIBONACCI")
+var fibonacci = [];
+fibonacci[0] = 0;
+fibonacci[1] = 1;
+for (var i = 2; i < 10; i++) {
+  fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+}
+console.log(fibonacci);
+
+var limit = 10;
+	var acum = [0,1];
+
+	for(i=2; i <= limit; i++){
+		acum.push(acum[i-1] + acum[i-2]);
+		document.write(acum[i]+"<br/>");	
+	}
+
+console.log("Uso Switch Case")
+
+let key = 1;
+key = "17 de Marzo"
+key = Date()
+
+switch (key){
+    case 1:
+        console.log("Valor Variable =>", key)
+        key++;
+        break;
+    case "17 de Marzo":
+        console.log("Valor variable =>", key)
+        key++
+        break;
+    default:
+        console.log("Valor variable no esta configurado en el Switch =>", key);
+        break;
+}
+
+let operacion="suma";
+let resultado=null
+switch (operacion){
+    case "suma":
+        resultado = 1+1;
+        break;
+    case "división":
+        resultado = 1/1;
+        break;
+    case "mutiplicación":
+        resultado = 1*1;
+        break;
+    case "resta":
+        resultado = 1-1;
+        break;
+}
+console.log(resultado);
+
+</script>
+
+</html>

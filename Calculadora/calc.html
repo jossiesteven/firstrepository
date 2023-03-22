@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>Calculadora</h1>
+    <br>
+    <br>
+    <input id="inumA"> Número A </input>
+    <br>
+    <br>
+    <input id="inumB" >Número B </input>
+    <br>
+    <br>
+    <button id="btsuma" onclick="fcalc(1)">Suma(+)</button>
+    <button id="btresta" onclick="fcalc(2)">Resta(-)</button>
+    <button id="btmultip" onclick="fcalc(3)">Multip(*)</button>
+    <button id="btdivide" onclick="fcalc(4)">Divide(/)</button>
+    
+    <br>
+    <br>
+    <h1 id="resultadosuma" >Resultado: </h1> 
+    <br>
+    <script>
+    console.log("ejcuntando codigo JavaScript!!")
+    
+    function fcalc(seloper){
+        console.log("ejcuntando funcion calculadora!!");
+        var ValA=0,ValB=0,Result=0;
+        ValA=document.getElementById("inumA");
+        ValB=document.getElementById("inumB");
+        console.log("Valor A", ValA.value);
+        console.log("Valor B", ValB.value);
+        console.log("Valor Selector", seloper);
+        if (!ValA.value || !ValB.value){
+            setText("resultadosuma","Faltan Datos");
+        }
+        //else if (Val.value=0 || ValB.value=0 && seloper=4){
+        //    setText("resultadosuma","para dividir, los valores no pueden ser ceros");
+        //}
+
+        else{
+            
+            switch (seloper) {
+
+                case 1: //suma
+                    Result=suma(ValA,ValB);
+                    break;
+                case 2: //resta
+                    Result=resta(ValA,ValB);
+                    break;    
+                case 3: //multiplica
+                    Result=multip(ValA,ValB);
+                    break;
+                case 4: //divide
+                    Result=divide(ValA,ValB);
+                    break;        
+            }
+            console.log("Resultado: ", Result);
+            setText("resultadosuma","Resultado:"+Result);
+        }
+  
+    }
+    function setText(id,newvalue) {
+        var s= document.getElementById(id);
+        s.innerHTML = newvalue;
+
+    }
+    function suma(ValAin, ValBin){
+        return Number(ValAin.value)+Number(ValBin.value);
+    }
+    function resta(ValAin, ValBin){
+        return Number(ValAin.value)-Number(ValBin.value);
+    }
+    function multip(ValAin, ValBin){
+        return Number(ValAin.value)*Number(ValBin.value);
+    }        
+    function divide(ValAin, ValBin){
+        return Number(ValAin.value)/Number(ValBin.value);
+    }        
+    
+        
+
+</script>
+
+</body>
