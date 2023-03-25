@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+console.log("Hola mundo JavaScript");
+
+const miConstante = "Información";
+
+console.log(miConstante);
+
+let miVariable = 1000;
+miVariable=300;
+console.log(miVariable);
+
+let abc = true;
+
+if(abc){
+    console.log(abc);
+}
+
+abc = false;
+if(abc){
+    console.log(abc);
+}
+else{
+    console.log(abc);
+}
+
+abc = true;
+if (abc==true){
+    console.log("==",abc);
+}
+
+abc=false;
+if(abc){
+    console.log(abc);
+}
+else if(abc==false){
+    console.log("False = ",abc);
+}
+
+for (let i=0; i<5; i++){
+    //const element = array[i];
+    console.log("Número = ",i);
+}
+
+let a=5;
+while (a<10){
+    console.log("Número = ",a);
+    a++;
+}
+
+let b=10;
+do{
+    console.log("Número = ",b);
+    b++;
+}
+while(b<15){
+    
+     // en vez de llaves puedo poner el símbolo ;  
+      
+}
+
+let cajero = "Opción 1"; 
+switch (cajero){
+    case 'Opción 1':
+        console.log(cajero);
+        break;
+
+    default:
+        console.log(cajero);
+        break;
+}
+
+function miFuncion(){
+    console.log("Ejecutando miFuncion");    
+}
+
+function operacion(){
+    let i=10;
+    let a=10;
+
+    let ia=i+a
+    console.log("Resultado = ",ia);
+}
+
+miFuncion();
+operacion();
+
+</script>
+
+</body>
+</html>
