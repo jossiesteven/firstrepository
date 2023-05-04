@@ -1,0 +1,13 @@
+.headerTable{
+    font-style:normal;
+    font-size: larger;
+    background-color: blue;
+}
+
+p{
+    background-color: blueviolet;
+}
+
+#mainContent{
+    color: darkgoldenrod;
+}
