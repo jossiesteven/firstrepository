@@ -1,0 +1,25 @@
+div{
+    border-style: solid;
+    
+}
+
+p{
+    color: yellow;
+    text-align: justify;
+}
+
+a{
+    font-style: italic;
+}
+
+h1{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
