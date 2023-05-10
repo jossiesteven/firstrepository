@@ -1,0 +1,71 @@
+.flexbox-container{
+    display: flex;
+    padding: 3%;
+    flex-direction: row;
+    border-style: dashed;
+}
+
+.flexbox-item{
+    border-style: solid;
+    text-align: left;
+    /*width: 100px;*/
+}
+
+#item1{
+    flex: 1;
+}
+
+#item2{
+    flex: 1;
+}
+
+#item3{
+    flex: 1;
+}
+
+#item4{
+    flex: 1;
+}
+
+#item5{
+    flex: 1;
+}
+
+#item6{
+    flex: 1;
+}
+
+#item7{
+    flex: 1;
+}
+
+.flexbox-second{
+    border-style: solid;
+    text-align: center;
+    width: 300px;
+}
+
+.flexbox-container-style{
+    display: flex;
+    padding: 3%;
+    flex-direction: row;
+    border-style: dashed;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexbox-sub-container{
+    display: flex;
+}
+
+.flexbox-third{
+    border-style: solid;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+}
+
+.style-div{
+    border-style: double;
+}
+
