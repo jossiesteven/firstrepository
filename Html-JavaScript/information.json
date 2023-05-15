@@ -1,0 +1,12 @@
+{
+    "ES-CO":{
+    "description": "Mi descripción",
+    "address":"Calle Falsa",
+    "date":1,
+    },
+    "EN":{
+        "description":"My description",
+        "address":"False Street",
+        "date":5,
+    }
+}

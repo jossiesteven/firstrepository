@@ -1,0 +1,18 @@
+.mainContainer{
+    display: flex;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+
+.itemInformation{
+    flex:1;
+    justify-content: center;
+    text-align: justify;
+    padding: 2%;
+}
+
+.inputContainer{
+    color: red;
+    background-color: aqua;
+    text-align: justify;
+}
