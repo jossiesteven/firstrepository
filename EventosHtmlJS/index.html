@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Eventos con Html (explícitos) y JavaScript</title>
+</head>
+<body>
+    <p style="border-style: double;"
+    onmouseover="myActionP()">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae rerum eum debitis quisquam sint. Optio voluptatibus distinctio tempora illo hic corporis vero qui laborum, sapiente eaque porro dolor ad modi eos libero, delectus cumque corrupti quisquam nihil deserunt earum amet itaque quam at. Ex ipsam impedit dolor beatae sit. Tenetur!</p>
+    <br>
+
+    <p id="descripcion"></p>
+
+    
+    <button onclick='alert("Fullstack")'>Botón Acción A</button>
+    <br><br>
+    <button onclick="console.log('data')" ondblclick="myAction()">Botón Acción B</button>
+    <br><br> 
+
+    <button onclick="myAction()">Botón Acción 1</button>
+    <br><br>
+    <button onclick="myAction2()">Botón Acción 2</button>
+    <br><br>
+
+     <!--<p id="myInputData"></p><br>-->
+     <input type="text" id="myInputData"><br>
+    <button onclick="changeData()">Cambio Input</button>
+
+    <!--<button onclick='()=>{}'>Botón Acción 1</button>
+
+    //<button onclick='function (){}'>Botón Acción 2</button>-->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
