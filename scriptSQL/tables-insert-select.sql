@@ -25,7 +25,6 @@ insert into empleados (id, nombre, edad ,salario)
 values (1,'steven', '32', 10000.12);
 
 
-
 insert into empleados (id, nombre, edad)
 values (2,'carlos', '31');
 
@@ -36,6 +35,10 @@ values (40,3,'Gloria');
 
 insert into empleados (edad,id,nombre)
 values (45,4,'Adriana'),(18,5,'juan'),(32,6,'violeta');
+
+
+insert into empleados (edad,id,nombre)
+values (18,7,'Carlos');
 
 
 

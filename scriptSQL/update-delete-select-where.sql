@@ -64,8 +64,11 @@ select *
 from empleados 
 where edad<30 and salario>1000000;
 
-select nombre, salario
+select id, nombre, salario
 from empleados e where salario is null;
+
+select id, nombre, salario
+from empleados e where salario is not null;
 
 select nombre, edad
 from empleados 
